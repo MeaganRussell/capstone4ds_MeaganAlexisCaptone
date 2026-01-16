@@ -1,7 +1,6 @@
 ---
-title: "Writing a great story for data science projects - Spring 2026 "
-subtitle: "This is a Report Template Quarto"
-author: "Student Name (Advisor: Dr. Cohen)"
+title: "Predicting Flood Severity of Northwest Florida Counties using Random Forest Regression Modeling - Spring 2026 "
+author: "Meagan Russell (Advisor: Dr. Cohen)"
 date: '`r Sys.Date()`'
 format:
   html:
@@ -17,95 +16,33 @@ editor:
   markdown: 
     wrap: 72
 ---
+<!--
+
+This is for me later, once the slides are ready to go.
 
 Slides: [slides.html](slides.html){target="_blank"} ( Go to `slides.qmd`
 to edit)
+--!>
 
-::: callout-important
-**Remember:** Your goal is to make your audience understand and care
-about your findings. By crafting a compelling story, you can effectively
-communicate the value of your data science project.
+## Week 1 - Individual Research:
 
-Carefully read this template since it has instructions and tips to
-writing!
+Paper One: Random Forest Algorithm Overview
 
-Nice report!
-:::
+This paper provides an overview of the Random Forest (RF) algorithm. Random Forest is a type of machine learning algorithm that uses a target variable known as a dependent variable. The goal of Random Forest is to predict the dependent variable based on independent variables. The way RF works is by creating decision trees. Decision trees are a series of yes/no questions, for example: 
 
-## Introduction
 
-The introduction should:
+Did the flooding cause any deaths? 
 
--   Develop a storyline that captures attention and maintains interest.
+Did the flooding result in more than $1,000,000 in property damage?
 
--   Your audience is your peers
+Did the flood occur countywide?
 
--   Clearly state the problem or question you're addressing.
+Did the flood cause agricultural damage?
 
-<!-- -->
 
--   Introduce why it is relevant needs.
+The authors go on to explain how Random Forest is a smart model that uses simple models, decision trees, which each can make small mistakes, but in the end, once all of the simple models are combined, they get the answer right. In addition, each decision tree's selection of data is random, which prevents the model from memorizing the data. There are limitations to Random Forest, such as increased computational cost and reduced transparency; however, overall Random Forest is reliable, widely applicable, and suitable for real-world problems.
 
--   Provide an overview of your approach.
-
-Example of writing including citing references:
-
-*This is an introduction to ..... regression, which is a non-parametric
-estimator that estimates the conditional expectation of two variables
-which is random. The goal of a kernel regression is to discover the
-non-linear relationship between two random variables. To discover the
-non-linear relationship, kernel estimator or kernel smoothing is the
-main method to estimate the curve for non-parametric statistics. In
-kernel estimator, weight function is known as kernel function
-[@efr2008]. Cite this paper [@bro2014principal]. The GEE [@wang2014].
-The PCA [@daffertshofer2004pca]*. Topology can be used in machine
-learning [@adams2021topology]
-
-For Symbolic Regression [@wang2019symbolic] *This is my work and I want
-to add more work...*
-
-Cite new paper [@su2012linear]
-
-Classification of Knee OA was studied here [@guida2021knee]
-
-## Methods
-
--   Detail the models or algorithms used.
-
--   Justify your choices based on the problem and data.
-
-*The common non-parametric regression model is*
-$Y_i = m(X_i) + \varepsilon_i$*, where* $Y_i$ *can be defined as the sum
-of the regression function value* $m(x)$ *for* $X_i$*. Here* $m(x)$ *is
-unknown and* $\varepsilon_i$ *some errors. With the help of this
-definition, we can create the estimation for local averaging i.e.*
-$m(x)$ *can be estimated with the product of* $Y_i$ *average and* $X_i$
-*is near to* $x$*. In other words, this means that we are discovering
-the line through the data points with the help of surrounding data
-points. The estimation formula is printed below [@R-base]:*
-
-$$
-M_n(x) = \sum_{i=1}^{n} W_n (X_i) Y_i  \tag{1}
-$$$W_n(x)$ *is the sum of weights that belongs to all real numbers.
-Weights are positive numbers and small if* $X_i$ *is far from* $x$*.*
-
-*Another equation:*
-
-$$
-y_i = \beta_0 + \beta_1 X_1 +\varepsilon_i
-$$
-
-## Analysis and Results
-
-### Data Exploration and Visualization
-
--   Describe your data sources and collection process.
-
--   Present initial findings and insights through visualizations.
-
--   Highlight unexpected patterns or anomalies.
-
-A study was conducted to determine how...
+Cite new paper [@Salman2024RandomForest]
 
 ```{r, warning=FALSE, echo=T, message=FALSE}
 # loading packages 
