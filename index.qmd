@@ -22,7 +22,7 @@ This is for me later, once the slides are ready to go.
 
 Slides: [slides.html](slides.html){target="_blank"} ( Go to `slides.qmd`
 to edit)
---!>
+-->
 
 ## Week 1 - Individual Research:
 
@@ -44,57 +44,3 @@ The authors go on to explain how Random Forest is a smart model that uses simple
 
 Cite new paper [@Salman2024RandomForest]
 
-```{r, warning=FALSE, echo=T, message=FALSE}
-# loading packages 
-library(tidyverse)
-library(knitr)
-library(ggthemes)
-library(ggrepel)
-library(dslabs)
-```
-
-```{python}
-import pandas as pd
-```
-
-```{r, warning=FALSE, echo=TRUE}
-# Load Data
-kable(head(murders))
-
-ggplot1 = murders %>% ggplot(mapping = aes(x=population/10^6, y=total)) 
-
-  ggplot1 + geom_point(aes(col=region), size = 4) +
-  geom_text_repel(aes(label=abb)) +
-  scale_x_log10() +
-  scale_y_log10() +
-  geom_smooth(formula = "y~x", method=lm,se = F)+
-  xlab("Populations in millions (log10 scale)") + 
-  ylab("Total number of murders (log10 scale)") +
-  ggtitle("US Gun Murders in 2010") +
-  scale_color_discrete(name = "Region")+
-      theme_bw()
-  
-
-```
-
-### Modeling and Results
-
--   Explain your data preprocessing and cleaning steps.
-
--   Present your key findings in a clear and concise manner.
-
--   Use visuals to support your claims.
-
--   **Tell a story about what the data reveals.**
-
-```{r}
-
-```
-
-### Conclusion
-
--   Summarize your key findings.
-
--   Discuss the implications of your results.
-
-## References
