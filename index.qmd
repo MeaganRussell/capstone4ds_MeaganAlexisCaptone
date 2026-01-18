@@ -26,7 +26,7 @@ to edit)
 
 ## Week 1 - Individual Research:
 
-Paper One: Random Forest Algorithm Overview
+**Paper One: Random Forest Algorithm Overview**
 
 This paper provides an overview of the Random Forest (RF) algorithm. Random Forest is a type of machine learning algorithm that uses a target variable known as a dependent variable. The goal of Random Forest is to predict the dependent variable based on independent variables. The way RF works is by creating decision trees. Decision trees are a series of yes/no questions, for example: 
 
@@ -42,5 +42,10 @@ Did the flood cause agricultural damage?
 
 The authors go on to explain how Random Forest is a smart model that uses simple models, decision trees, which each can make small mistakes, but in the end, once all of the simple models are combined, they get the answer right. In addition, each decision tree's selection of data is random, which prevents the model from memorizing the data. There are limitations to Random Forest, such as increased computational cost and reduced transparency; however, overall Random Forest is reliable, widely applicable, and suitable for real-world problems.
 
-Cite new paper [@Salman2024RandomForest]
+Cite new paper @Salman2024RandomForest
 
+**Paper two: Machine Learning Classification of Significant Tornadoes and Hail in the United States Using ERA5 Proximity Soundings**
+
+In this paper the authors compared logistic regression, gaussian naive bayes, support vector machines, decision trees, adaptive boosting, gradient boosting, and random forest classification to see which model could best predict the severity class of tornadoes and hail events (severe vs. significant-severe). The data used in this study was collected from two sources: ERA5 for the weather and climate and NOAA for the actual storm events. The goal was to predict the severity of the storms with the weather and climate data before known events. To test the models the authors used validation techniques, multiple skill metrics, and frequency. For instance, the authors tested the models by leaving one year out for cross validation and they evaluated model performance using the critical success index (CSI). Of the models used, Random Forest, was the best model. It was the most accurate and it didn't over or under estimate the severity of the storms. The authors also state that Random Forest can potentially be used for real-world forecasting applications.
+
+Cite new paper @Gensini2021SevereML
