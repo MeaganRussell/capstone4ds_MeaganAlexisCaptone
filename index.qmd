@@ -50,9 +50,9 @@ In this paper the authors compared logistic regression, gaussian naive bayes, su
 
 Cite new paper @Gensini2021SevereML
 
-## Week 2: Individual Research
+## Week 2: Individual Research:
 
-**Paper one: 
+**Paper one: Predicting Flood Severity Using Machine Learning and Hybrid Models** 
 
 This paper compares linear regression, support vector machines (svm), random forest, xgboost, and a hybrid model of the models to determine which model/hybrid model is the best at predicting the severity of flood damage. The authors used hictorical flood records to determine severity. They used Total Damage as the main variable to predict severity. The authors sorted the floods by total damage, smallest amount to largest, and then split the groups evenly. The groups were defined as low-severity, medium-severity, and high-severity. To verify that this classification of severity was accurate the authors looked at the number of deaths, number of displaced individuals, and the number of people affected. They found that the number of those three variables increased with the severity class already defined. The authors trained the models to evaulate which model/hybrid model was the most accurate at predicting severity. The authors found that the hybrid model that combined random forest, support vector machine, and xgboost was the most accurate, while XGBoost came in second and Random Forest was third. Overall, the study found that combining models resulted in a more accurate prediction, high-severity floods were eaiser to classify than moderate-severity floods, and flood severity can be predicted using machine learning.
 
